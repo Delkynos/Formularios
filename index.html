@@ -50,6 +50,41 @@
       <br />
       <label for="rango">Rango:</label>
       <input type="range" id="rango" />
+      <br />
+      <br />
+      <label for="telefono">Telefono:</label>
+      <input
+        type="tel"
+        id="telefono"
+        autocomplete="off"
+        pattern="[0-9]{4}-[0-9]{4}"
+      />
+      <p>
+        El input de tipo tel requiere un patrón (atributo pattern) para validar
+        el dato.
+        <br />
+        Por ejemplo: <code>pattern="[0-9]{4}-[0-9]{4}"</code> <br />
+        El inicio ([0-9]{4}) indica que se permiten números del 0 al 9, que
+        deben ser 4, luego se debe escribir un guión y finalmente otros 4
+        números.
+      </p>
+      <label for="radio">Radio:</label>
+      <input type="radio" id="radio" name="radio" />
+      <span>Opcion 1</span>
+      <input type="radio" id="radio" name="radio" />
+      <span>Opcion 2</span>
+      <br /><br />
+      <label for="checkbox">checkbox:</label>
+      <input type="checkbox" id="checkbox" />
+      <br /><br />
+      <button type="button">Tipo boton</button>
+      <button type="reset">Reset</button>
+      <button>Enviar</button>
+      <p>
+        Si un boton no especifica su tipo
+        <b>y se encuentra en un form</b>,automaticamente su tipo pasa a ser
+        <b>Submit</b>
+      </p>
     </form>
   </body>
 </html>
